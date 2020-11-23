@@ -1,5 +1,120 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    You are here:&nbsp;&nbsp;
+    <li class="breadcrumb-item"><a href="#">POST Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Standard Query - Locations</li>
+  </ol>
+</nav>
 <div class="main-content" >
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Standard Query - Locations</h4>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <div class="row">
+                                <p class="query-type-text">&nbsp;<a href="#">Query Help</a>&ngsp;|&ngsp;<a href="#">Location Query</a>&ngsp;|&ngsp;<a href="#">Command Line Query</a></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Corporate Blog</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Virtual Office</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Base Area</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Non-Corporate Facility</label>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Numeric Loc</label>
+                                        <input id="numericloc" type="text" class="form-control" placeholder="300001" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="row" style="margin-top:20px;margin-left:20px">
+                                            <label class="input-lg radio-inline"><input type="radio" name="optradio" checked>Active</label>
+                                            <label class="input-lg radio-inline"><input type="radio" name="optradio">Inactive</label>
+                                            <label class="input-lg radio-inline"><input type="radio" name="optradio">All</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>FML Loc</label>
+                                        <input id="fmlloc" type="text" class="form-control" placeholder="nj9620" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Street</label>
+                                        <input id="street" type="text" class="form-control" placeholder="600 mount*" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input id="city" type="text" class="form-control" placeholder="basking ridge" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <input id="state" type="text" class="form-control" placeholder="nj" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>ZIP code</label>
+                                        <input id="zipcode" type="number" class="form-control" placeholder="30000001" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input id="country" type="text" class="form-control" placeholder="japan, us, ...">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Country Code</label>
+                                        <input id="countrycode" type="text" class="form-control" placeholder="jp, ie, sa, ...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Region</label>
+                                        <input id="countrycode" type="text" class="form-control" placeholder="jp, ie, sa, ...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#/people" type="submit" class="btn btn-info btn-fill pull-right">Submit Query</a>
+                            <button (click)="clearForm()" type="submit" class="btn btn-info btn-fill pull-right" style="margin-right:10px;">Clear Form</button>
+                            <div class="clearfix"></div>
+
+                        </form>
+                        <p>
+                            Help:&nbsp;<a href="http://itss.avaya.com">http://itss.avaya.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

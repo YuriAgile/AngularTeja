@@ -1,7 +1,107 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    You are here:&nbsp;&nbsp;
+    <li class="breadcrumb-item"><a href="#">POST Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Standard Query - Services</li>
+  </ol>
+</nav>
 <div class="main-content">
     <div class="container-fluid">
         <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Standard Query - Services</h4>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <div class="row">
+                                <p class="query-type-text"><a href="#">Query Help</a>&ngsp;|&ngsp;<a href="#">Services Overview</a>&ngsp;|&ngsp;<a href="#">Alphabetical Listing</a>&ngsp;<a href="#">External Directories</a></p>
+                                <p class="query-type-text">Other:&nbsp;<a href="#">Query Help</a>&nbsp;|&nbsp;<a href="#">External Directories</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Service Name(keywords)</label>
+                                        <input id="servicename" type="text" class="form-control" placeholder="pioneer" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Description(keywords)</label>
+                                        <input id="description" type="text" class="form-control" placeholder="Jack" value="">
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Service Handle</label>
+                                        <input id="servicehandle" type="text" class="form-control" placeholder="network" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Location</label>
+                                        <input id="location" type="text" class="form-control" placeholder="nj9620" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input id="city" type="text" class="form-control" placeholder="basking" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <input id="state" type="text" class="form-control" placeholder="nj" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input id="country" type="text" class="form-control" placeholder="nz, ca, bc...">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Telephone</label>
+                                        <input id="telephone" type="text" class="form-control" placeholder="953 7678">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Output Format</label>
+                                        <select class="form-control">
+                                            <option>short</option>
+                                            <option>single-line + personnel number</option>
+                                            <option>multi-line</option>
+                                            <option>people counter</option>
+                                            <option>address label</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" type="submit" class="btn btn-info btn-fill pull-right">Submit Query</a>
+                            <button (click)="clearForm()" type="submit" class="btn btn-info btn-fill pull-right" style="margin-right:10px;">Clear Form</button>
+                            <div class="clearfix"></div>
+                        </form>
+                        <p>
+                            Help:&nbsp;<a href="http://itss.avaya.com">http://itss.avaya.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

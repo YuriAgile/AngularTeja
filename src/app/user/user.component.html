@@ -1,5 +1,136 @@
-<div class="main-content" >
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    You are here:&nbsp;&nbsp;
+    <li class="breadcrumb-item"><a href="#">POST Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Standard Query - Organizations</li>
+  </ol>
+</nav>
+<div class="main-content">
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Standard Query - Organizations</h4>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <div class="row">
+                                <p class="query-type-text"><a href="#">Query Help</a>&ngsp;|&ngsp;<a href="#">Reporting and Dpt/CC Queries</a>&ngsp;|&ngsp;<a href="#">Command Line Query</a></p>
+                            </div>
+                            <h5 class="title">Reporting Hierarchy: Supervisor and group reporting relationships.</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Handle</label>
+                                        <input id="handle" type="text" class="form-control" placeholder="j.Smith" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Personnel No</label>
+                                        <input id="personnelno" type="text" class="form-control" placeholder="12345667" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Name</label>
+                                        <input id="name" type="text" class="form-control" placeholder="Smith">
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">View of Data</label>
+                                        <div class="row" style="margin-top:10px;">
+                                            <div class="col-md-12">
+                                                <label class="input-lg radio-inline"><input type="radio" name="optradio" checked>Full</label>
+                                                <label class="input-lg radio-inline"><input type="radio" name="optradio">Group only</label>
+                                                <label class="input-lg radio-inline"><input type="radio" name="optradio">Upward reporting chain only</label>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Levels Viewed(1-4 output levels relative to name entered above)</label>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#/people" type="submit" class="btn btn-info btn-fill pull-right">Submit Query</a>
+                            <button (click)="clearForm()" type="submit" class="btn btn-info btn-fill pull-right" style="margin-right:10px;">Clear Form</button>
+                            <div class="clearfix"></div>
+                            <hr>
+                            <h5 class="title">Cost Center Hierarchy: Find employees based on Cost Centers.</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Cost Center</label>
+                                        <input id="costcenter" type="text" class="form-control" placeholder="12345667" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">View of Data</label>
+                                        <div class="row" style="margin-top:10px;">
+                                            <div class="col-md-12">
+                                                <label class="input-lg radio-inline"><input type="radio" name="optradio" checked>All</label>
+                                                <label class="input-lg radio-inline"><input type="radio" name="optradio">Cost centers only</label>
+                                                <label class="input-lg radio-inline"><input type="radio" name="optradio">Upward chai</label>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Levels Viewed(1-4 output levels relative to code entered above)</label>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#/people" type="submit" class="btn btn-info btn-fill pull-right">Submit Query</a>
+                            <button (click)="clearForm()" type="submit" class="btn btn-info btn-fill pull-right" style="margin-right:10px;">Clear Form</button>
+                            <div class="clearfix"></div>
+                            <div class="row" style="margin:0px;margin-top:20px;">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-success">Userful infromation: <a href="#">Reporting Hierarchy Tutorial</a><a href="#">Cost Center Tutorial</a><a href="#">Disclaimer</a></li>
+                                    <li class="list-group-item list-group-item-success">Cost Center codes are arbitrarily assigned by CFO, therefore using a wildcard search-
+                                    such as SMB*--will not work.</li>
+                                </ul>
+                            </div>
+                        </form>
+                        <p>
+                            Help:&nbsp;<a href="http://itss.avaya.com">http://itss.avaya.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
