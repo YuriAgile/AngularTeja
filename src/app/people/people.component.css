@@ -1,0 +1,8 @@
+.breadcrumb{
+    padding-left: 33px;
+}
+.table > thead > tr > th {
+    background-color: #48b94b;
+    color: white;
+    font-size: large;
+} 

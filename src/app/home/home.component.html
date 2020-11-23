@@ -1,0 +1,129 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    You are here:&nbsp;&nbsp;
+    <li class="breadcrumb-item"><a href="#">POST Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Standard Query - People</li>
+  </ol>
+</nav>
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Standard Query - People</h4>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <div class="row">
+                                <p class="query-type-text">People Query Types:&nbsp;<a href="#">Quick</a>&ngsp;|&ngsp;<a href="#">Standard</a>&ngsp;|&ngsp;<a href="#">Advanced</a>&ngsp;<a href="#">Command Line</a></p>
+                                <p class="query-type-text">Other:&nbsp;<a href="#">Query Help</a>&nbsp;|&nbsp;<a href="#">External Directories</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Full Name</label>
+                                        <input id="fullname" type="text" class="form-control" placeholder="j.Smith" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Pref First Name</label>
+                                        <input id="firstname" type="text" class="form-control" placeholder="Jack" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Last Name</label>
+                                        <input id="lastname" type="text" class="form-control" placeholder="Smith">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Handle</label>
+                                        <input id="handle" type="text" class="form-control" placeholder="jsmith" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Personal Number</label>
+                                        <input id="personalnumber" type="text" class="form-control" placeholder="60829623" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Telephone</label>
+                                        <input id="telephone" type="text" class="form-control" placeholder="582 6075" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Cost Center</label>
+                                        <input id="costcenter" type="text" class="form-control" placeholder="10062251" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Numeric Location</label>
+                                        <input id="numericlocation" type="number" class="form-control" placeholder="30000001" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <input id="state" type="text" class="form-control" placeholder="nz, ca, bc...">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input id="country" type="text" class="form-control" placeholder="japan">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Output Format</label>
+                                        <select class="form-control">
+                                            <option>single-line</option>
+                                            <option>single-line + personnel number</option>
+                                            <option>multi-line</option>
+                                            <option>people counter</option>
+                                            <option>address label</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#/people" type="submit" class="btn btn-info btn-fill pull-right">Submit Query</a>
+                            <button (click)="clearForm()" type="submit" class="btn btn-info btn-fill pull-right" style="margin-right:10px;">Clear Form</button>
+                            <div class="clearfix"></div>
+                            <div class="row" style="margin:0px;margin-top:20px;">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-success">I want to search on other POST attributes! <a href="#">Use the Advanced Query!</a></li>
+                                    <li class="list-group-item list-group-item-success">I want to submit my POST query with the Enter/Return key! <a href="#">Use Quick Search!</a></li>
+                                    <li class="list-group-item list-group-item-success">A period must separate first, middle, and last names or initials: first.middle.last</li>
+                                    <li class="list-group-item list-group-item-success">Use * to search for names that start with entered characters: fi*.last</li>
+                                    <li class="list-group-item list-group-item-success">Use ? to search for names that sound like the one you entered: first.last</li>
+                                    <li class="list-group-item list-group-item-success">To update your entry, click on the Updates menu or links at the bottom of page.</li>
+                                </ul>
+                            </div>
+                        </form>
+                        <p>
+                            Help:&nbsp;<a href="http://itss.avaya.com">http://itss.avaya.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
